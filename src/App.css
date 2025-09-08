@@ -1,0 +1,530 @@
+/* App.css - 시설물 관리 시스템 스타일 */
+
+* {
+  box-sizing: border-box;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-gray-100 {
+  background-color: #f3f4f6;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-gray-900 {
+  color: #111827;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.text-gray-600 {
+  color: #4b5563;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .md\\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .md\\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.from-blue-500 {
+  --tw-gradient-from: #3b82f6;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(59, 130, 246, 0));
+}
+
+.to-blue-600 {
+  --tw-gradient-to: #2563eb;
+}
+
+.from-green-500 {
+  --tw-gradient-from: #10b981;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(16, 185, 129, 0));
+}
+
+.to-green-600 {
+  --tw-gradient-to: #059669;
+}
+
+.from-yellow-500 {
+  --tw-gradient-from: #f59e0b;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(245, 158, 11, 0));
+}
+
+.to-yellow-600 {
+  --tw-gradient-to: #d97706;
+}
+
+.from-red-500 {
+  --tw-gradient-from: #ef4444;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(239, 68, 68, 0));
+}
+
+.to-red-600 {
+  --tw-gradient-to: #dc2626;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-opacity-20 {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.border {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.hover\\:shadow-md:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 0.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-gray-500 {
+  color: #6b7280;
+}
+
+.text-gray-700 {
+  color: #374151;
+}
+
+.text-green-600 {
+  color: #16a34a;
+}
+
+.text-yellow-600 {
+  color: #ca8a04;
+}
+
+.text-red-600 {
+  color: #dc2626;
+}
+
+/* 설비별 색상 클래스 */
+.bg-blue-50 { background-color: #eff6ff; }
+.border-blue-200 { border-color: #bfdbfe; }
+.bg-blue-500 { background-color: #3b82f6; }
+
+.bg-orange-50 { background-color: #fff7ed; }
+.border-orange-200 { border-color: #fed7aa; }
+.bg-orange-500 { background-color: #f97316; }
+
+.bg-red-50 { background-color: #fef2f2; }
+.border-red-200 { border-color: #fecaca; }
+.bg-red-500 { background-color: #ef4444; }
+
+.bg-teal-50 { background-color: #f0fdfa; }
+.border-teal-200 { border-color: #99f6e4; }
+.bg-teal-500 { background-color: #14b8a6; }
+
+.bg-cyan-50 { background-color: #ecfeff; }
+.border-cyan-200 { border-color: #a5f3fc; }
+.bg-cyan-500 { background-color: #06b6d4; }
+
+.bg-emerald-50 { background-color: #ecfdf5; }
+.border-emerald-200 { border-color: #a7f3d0; }
+.bg-emerald-500 { background-color: #10b981; }
+
+.bg-sky-50 { background-color: #f0f9ff; }
+.border-sky-200 { border-color: #bae6fd; }
+.bg-sky-500 { background-color: #0ea5e9; }
+
+.bg-indigo-50 { background-color: #eef2ff; }
+.border-indigo-200 { border-color: #c7d2fe; }
+.bg-indigo-500 { background-color: #6366f1; }
+
+.bg-pink-50 { background-color: #fdf2f8; }
+.border-pink-200 { border-color: #fbcfe8; }
+.bg-pink-500 { background-color: #ec4899; }
+
+.bg-green-50 { background-color: #f0fdf4; }
+.border-green-200 { border-color: #bbf7d0; }
+.bg-green-500 { background-color: #22c55e; }
+
+.bg-purple-50 { background-color: #faf5ff; }
+.border-purple-200 { border-color: #e9d5ff; }
+.bg-purple-500 { background-color: #a855f7; }
+
+.bg-rose-50 { background-color: #fff1f2; }
+.border-rose-200 { border-color: #fecdd3; }
+.bg-rose-500 { background-color: #f43f5e; }
+
+.bg-violet-50 { background-color: #f5f3ff; }
+.border-violet-200 { border-color: #ddd6fe; }
+.bg-violet-500 { background-color: #8b5cf6; }
+
+.bg-stone-50 { background-color: #fafaf9; }
+.border-stone-200 { border-color: #e7e5e4; }
+.bg-stone-500 { background-color: #78716c; }
+
+/* 로딩 애니메이션 */
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.hover\\:bg-blue-600:hover {
+  background-color: #2563eb;
+}
+
+/* 추가 스타일 */
+.w-5 {
+  width: 1.25rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.text-blue-600 {
+  color: #2563eb;
+}
+
+.hover\\:text-blue-800:hover {
+  color: #1e40af;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
+.bg-green-500 {
+  background-color: #22c55e;
+}
+
+.bg-yellow-500 {
+  background-color: #eab308;
+}
+
+.bg-red-500 {
+  background-color: #ef4444;
+}
+
+.bg-gray-300 {
+  background-color: #d1d5db;
+}
+
+.hover\\:shadow-lg:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.transition-shadow {
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-gray-200 {
+  border-color: #e5e7eb;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+/* 추가 스타일 */
+.w-4 {
+  width: 1rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.text-green-600 {
+  color: #16a34a;
+}
+
+.hover\\:text-green-800:hover {
+  color: #166534;
+}
+
+.hover\\:text-red-800:hover {
+  color: #991b1b;
+}
+
+.border {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+input, textarea {
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px #3b82f6;
+}
+
+/* 버튼 스타일 */
+.border-green-300 {
+  border-color: #86efac;
+}
+
+.border-red-300 {
+  border-color: #fca5a5;
+}
+
+.border-blue-300 {
+  border-color: #93c5fd;
+}
